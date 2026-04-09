@@ -78,8 +78,8 @@ Telegram bot for text recognition from images using Qwen Vision API. Dockerized 
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=E13ctr0N&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=70a5fd&text_color=c9d1d9" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=E13ctr0N&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9" />
+<img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=E13ctr0N&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=70a5fd&text_color=c9d1d9" />
+<img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=E13ctr0N&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&text_color=c9d1d9" />
 
 <img width="600" src="https://streak-stats.demolab.com?user=E13ctr0N&theme=tokyonight&hide_border=true&background=0d1117&stroke=70a5fd&ring=70a5fd&fire=70a5fd&currStreakLabel=70a5fd" />
 
