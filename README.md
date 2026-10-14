@@ -107,7 +107,7 @@ Telegram bot for extracting text from images with a vision model, optimized imag
 
 <div align="center">
 
-<a href="https://github.com/E13ctr0N"><img height="150" src="https://github-readme-stats-sigma-five.vercel.app/api?username=E13ctr0N&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=70a5fd&text_color=c9d1d9" alt="E13ctr GitHub stats" /></a>
+<a href="https://github.com/E13ctr0N"><img height="150" src="./profile/stats.svg" alt="E13ctr GitHub stats" /></a>
 
 </div>
 

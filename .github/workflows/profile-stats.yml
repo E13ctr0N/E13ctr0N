@@ -1,0 +1,50 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/profile-stats.yml
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          ref: main
+
+      - name: Generate the stats card
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: stats
+          options: username=E13ctr0N&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=70a5fd&icon_color=70a5fd&text_color=c9d1d9
+          path: profile/stats.svg
+          core_version: '2.2.1'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: 'true'
+
+      - name: Commit the updated card
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- profile/stats.svg
+          if git diff --cached --quiet; then
+            echo "Stats card is already up to date."
+            exit 0
+          fi
+          git commit -m "Update profile stats"
+          git push origin HEAD:main
